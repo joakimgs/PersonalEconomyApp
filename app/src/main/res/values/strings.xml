@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EkonomiAppen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lastweek">Senaste veckan</string>
+    <string name="lastmonth">Senaste månaden</string>
+    <string name="alltime">För all tid</string>
+    <string name="title_activity_economy">EconomyActivity</string>
+</resources>

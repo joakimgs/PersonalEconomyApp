@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragExpense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ae3808.mah.se.ekonomiappen.ExpenseFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="42dp"
+        android:text="Kategorier:"
+        android:id="@+id/tvCategories"
+        android:layout_gravity="left|top"
+        android:textSize="14dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Datum:"
+        android:id="@+id/tvDate"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Titel:"
+        android:id="@+id/tvTitle"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="33dp"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pris:"
+        android:id="@+id/tvPrice"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="37dp"
+        android:textSize="22dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rgExpense"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="75dp"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbGroceries"
+        android:layout_gravity="center_horizontal|top"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbFootball"
+        android:layout_gravity="center_horizontal|top"
+        android:checked="false"
+        android:layout_marginLeft="20dp"
+
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbAirplane"
+        android:layout_gravity="center_horizontal|top"
+        android:checked="false"
+        android:layout_marginLeft="20dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbHouse"
+        android:layout_gravity="right|top"
+        android:checked="false"
+        android:layout_marginLeft="20dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbOther"
+        android:layout_gravity="right|top"
+        android:checked="false"
+        android:layout_marginLeft="20dp" />
+    </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivGroceries"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/foodbagg"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="70dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivFootball"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/football"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="21dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivAirplane"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/airplanee"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivHouse"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/house"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="82dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivOther"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/other"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="131dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etDate"
+        android:layout_marginTop="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etTitle"
+        android:layout_marginTop="167dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_gravity="center_horizontal|top" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/etPrice"
+        android:layout_marginTop="217dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal|top"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Lägg till utgift"
+        android:id="@+id/btnExpense"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="35dp" />
+
+
+</FrameLayout>

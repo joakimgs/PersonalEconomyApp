@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ae3808.mah.se.ekonomiappen.LoginFragment"
+    android:id="@+id/fragLogin">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:text="Lägg till inkomst"
+        android:id="@+id/btnIncome"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etLastname"
+        android:layout_alignStart="@+id/etLastname"
+        android:layout_alignRight="@+id/etLastname"
+        android:layout_alignEnd="@+id/etLastname"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="14dp" />
+
+    <Button
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:text="Lägg till utgift"
+        android:id="@+id/btnExpense"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etLastname"
+        android:layout_alignStart="@+id/etLastname"
+        android:layout_alignRight="@+id/etLastname"
+        android:layout_alignEnd="@+id/etLastname"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="14dp" />
+
+    <Button
+        android:layout_width="265dp"
+        android:layout_height="65dp"
+        android:text="Övesikt"
+        android:id="@+id/btnOverview"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etLastname"
+        android:layout_alignStart="@+id/etLastname"
+        android:layout_alignRight="@+id/etLastname"
+        android:layout_alignEnd="@+id/etLastname"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="14dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:inputType="textPersonName"
+        android:layout_marginTop="122dp"
+        android:layout_marginLeft="73dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Namn:"
+        android:id="@+id/tvName"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="107dp"
+        android:textSize="24dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivMoneybag"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/mmoneybag"
+        android:layout_marginTop="410dp"/>
+
+
+</FrameLayout>

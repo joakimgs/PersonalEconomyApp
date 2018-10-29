@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ae3808.mah.se.ekonomiappen.OverviewFragment"
+    android:id="@+id/fragment_Overview">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nollställ"
+        android:id="@+id/btnClearDB"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastweek"
+            android:id="@+id/rbLastweek" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastmonth"
+            android:id="@+id/rbLastmonth" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alltime"
+            android:id="@+id/rbAlltime" />
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+         android:id="@+id/lvIncome"
+        android:layout_marginTop="100dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lvExpense"
+        android:layout_marginTop="350dp"
+
+        />
+    <TextView
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:text="Sharedpref"
+        android:id="@+id/tvSharedPref"
+        android:layout_gravity="right|top" />
+
+
+
+</FrameLayout>
